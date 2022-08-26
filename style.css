@@ -1,0 +1,213 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform:capitalize;
+    text-decoration: none;
+
+}
+
+:root {
+    --blue: rgb(161, 153, 229);
+    --red: #FF0000;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.3;
+    background-color: rgb(235, 240, 245);
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+img, video{
+    max-width: 100%;
+}
+
+#wrapper {
+    width: 1080px;
+    margin: 100px auto;
+}
+
+#nav {
+    position: fixed;
+    background-color: brown;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+    
+}
+
+#nav ul {
+    list-style: none;
+    align-items: flex-end;
+}
+
+#nav ul li {
+    position: relative;
+    float: left;
+
+}
+#nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+}
+
+#nav ul li a:hover {
+    background-color: rgb(8, 102, 109);
+    width: 100%;
+}
+
+#nav ul li ul {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+}
+#nav ul li ul li a {
+    color: black;
+}
+
+#nav ul li ul li {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    border-top: 1px solid lightcoral;
+}
+
+
+#nav ul li ul {
+    top: 100%;
+}
+
+#nav ul li:hover ul {
+    width: 100%;
+    display: initial;
+}
+
+#nav ul li ul li:hover a {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*---------------------------*/
+
+
+#sitenav {
+    background-color: rgb(77, 0, 66);
+    margin-top: 550px;
+}
+
+.primarynav ul li {
+    list-style: none;
+    text-decoration: none;
+    margin-left: -5px;
+    display: inline;
+
+}
+
+#sitenav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: rgb(100, 82, 59);
+    border-right: 1px solid salmon;
+
+}
+
+#sitenav ul li a:hover {
+    color: rgb(129, 236, 255);
+    text-decoration: none;
+   /* transform: translateY(40px); */
+    cursor: pointer;
+    background-color: blueviolet;
+}
+
+#sitenav ul li:last-child a {
+    border-right: 0;
+}
+
+#sitenav ul li:nth-child(1) a {
+    border-left: 1px solid salmon;
+}
+
+/*========end First sitenav or menu bar======== */
+
+/*
+
+#sitenav2 {
+    background-color: steelblue;
+    margin-bottom: 200px;
+}
+
+.primarynav2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.primarynav2 ul li {
+    float: left;
+}
+
+#sitenav2 ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: rgb(100, 82, 59);
+    border-right: 1px solid salmon;
+
+}
+
+#sitenav2 ul li:last-child a {
+    border-right: 0;
+}
+
+#sitenav2 ul li a:hover {
+    color: rgb(129, 236, 255);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(126, 0, 88);
+}
+
+.submenu2 ul li a{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: wheat;
+    width: 150px;
+}
+
+.submenu2 li a {
+    display: inline-block;
+    padding: 5px;
+} 
+ */
+.primarynav2 ul li {
+    display: inline-flex;
+}
